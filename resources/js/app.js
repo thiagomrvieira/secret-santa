@@ -46,14 +46,33 @@ import App from './App.vue';
 Vue.use(VueAxios, axios);
 
 import HomeComponent from './components/HomeComponent.vue';
+import LoginComponent from './components/LoginComponent.vue';
+import PerfilComponent from './components/PerfilComponent.vue';
+import SorteioComponent from './components/SorteioComponent.vue';
 
 
 const routes = [
-  {
-      name: 'home',
-      path: '/',
-      component: HomeComponent
-  }
+    {
+        name: 'home',
+        path: '/',
+        component: HomeComponent
+    },
+    {
+        name: 'login',
+        path: '/login',
+        component: LoginComponent
+    },
+    {
+        name: 'perfil',
+        path: '/perfil',
+        component: PerfilComponent
+    },
+    {
+        name: 'Sorteio',
+        path: '/Sorteio',
+        component: SorteioComponent
+    },
+
 ];
 
 const router = new VueRouter({ mode: 'history', routes: routes});
