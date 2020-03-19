@@ -1976,6 +1976,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({// mounted() {
   //     console.log('Component mounted.')
   // }
@@ -2002,10 +2015,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({// mounted() {
   //     console.log('Component mounted.')
   // }
@@ -2022,6 +2031,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -75805,7 +75819,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "container" },
     [
       _c(
         "nav",
@@ -75897,33 +75910,78 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "container" },
     [
       _c(
         "b-card",
         { attrs: { title: "Amigo secreto", "sub-title": "Como funciona" } },
         [
-          _c("b-card-text", [
-            _vm._v("\n        Some quick example text to build on the "),
-            _c("em", [_vm._v("card title")]),
-            _vm._v(
-              " and make up the bulk of the card's\n        content.\n        "
-            )
-          ]),
+          _c(
+            "b-list-group",
+            [
+              _c("b-list-group-item", { attrs: { href: "#" } }, [
+                _vm._v(
+                  "Informe o nome e o email de cada participante do sorteio."
+                )
+              ]),
+              _vm._v(" "),
+              _c("b-list-group-item", { attrs: { href: "#" } }, [
+                _vm._v("Clique em sortear amigo secreto. Pronto!")
+              ]),
+              _vm._v(" "),
+              _c("b-list-group-item", { attrs: { href: "#" } }, [
+                _vm._v(
+                  "O site irá realizar um sorteio aleatório, gerar o resultado e enviar o amigo sorteado para cada email informado."
+                )
+              ])
+            ],
+            1
+          ),
           _vm._v(" "),
-          _c("b-card-text", [
-            _vm._v("A second paragraph of text in the card.")
+          _c("b-card-text", { staticClass: "mt-3" }, [
+            _c("p", [
+              _vm._v(
+                " O sorteio de amigo secreto é uma brincadeira popular de troca de presentes entre pessoas. A pessoa na qual um participante irá presentear é definida por um sorteio aleatório, o resultado do sorteio deve ser mantido em segredo até o dia da troca de presentes. "
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                " Se preferir uma ferramenta completa acesse o Amigão Secreto que oferece uma plataforma completa para o seu amigo secreto com participação de crianças, idosos e animais sem email ou facebook."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                " O encontro marcado para a troca de presentes do amigo secreto é marcado por surpresas e jogos de advinhação. O participante a revelar o seu amigo secreto irá dar pistas para que outros participantes tentem adivinhar quem é o seu amigo secreto, tornando assim o evento descontraido e misterioso."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                " O Amigo Secreto é uma brincadeira muito comum em finais de ano, principalmente na época do Natal realizado com amigos e familiares, também muito utilizado em empresas e escolas pelos próprios funcionários ou alunos. Realizar um amigo secreto é muito divertido, crie o seu agora."
+              )
+            ])
           ]),
           _vm._v(" "),
           _c(
-            "router-link",
-            { staticClass: "card-link", attrs: { to: "/sorteio" } },
-            [_vm._v("Criar amigo secreto")]
+            "b-button",
+            [
+              _c("router-link", { attrs: { to: "/sorteio", tag: "li" } }, [
+                _vm._v("Criar amigo secreto")
+              ])
+            ],
+            1
           ),
           _vm._v(" "),
           _c(
-            "router-link",
-            { staticClass: "card-link", attrs: { to: "/login" } },
-            [_vm._v("Ver amigo secreto")]
+            "b-button",
+            [
+              _c("router-link", { attrs: { to: "/login", tag: "li" } }, [
+                _vm._v("Ver amigo secreto")
+              ])
+            ],
+            1
           )
         ],
         1
@@ -75954,30 +76012,14 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    { staticClass: "container" },
+    [_c("b-card", { attrs: { title: "Login", "sub-title": "login" } })],
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row justify-content-center" }, [
-      _c("div", { staticClass: "col-md-8" }, [
-        _c("div", { staticClass: "card card-default" }, [
-          _c("div", { staticClass: "card-header" }, [
-            _vm._v("Login Component")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-body" }, [
-            _vm._v(
-              "\n                I'm the Login Component component.\n            "
-            )
-          ])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -75999,30 +76041,63 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    [
+      _c(
+        "b-card",
+        {
+          staticClass: "overflow-hidden ml-4",
+          staticStyle: { "max-width": "740px" },
+          attrs: { "no-body": "" }
+        },
+        [
+          _c(
+            "b-row",
+            { attrs: { "no-gutters": "" } },
+            [
+              _c(
+                "b-col",
+                { attrs: { md: "6" } },
+                [
+                  _c("b-card-img", {
+                    staticClass: "rounded-0",
+                    attrs: { src: "https://picsum.photos/400/400/?image=10" }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-col",
+                { attrs: { md: "6" } },
+                [
+                  _c(
+                    "b-card-body",
+                    { attrs: { title: "Thiago Maciel" } },
+                    [
+                      _c("b-card-text", [
+                        _vm._v(
+                          "\n                        Aqui vem alguma informação sobre mim. \n                    "
+                        )
+                      ])
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row justify-content-center" }, [
-      _c("div", { staticClass: "col-md-8" }, [
-        _c("div", { staticClass: "card card-default" }, [
-          _c("div", { staticClass: "card-header" }, [
-            _vm._v("Perfil Component")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-body" }, [
-            _vm._v(
-              "\n                I'm the Perfil Component component.\n            "
-            )
-          ])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

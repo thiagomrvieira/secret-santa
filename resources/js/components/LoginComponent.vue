@@ -1,15 +1,11 @@
 <template>
-  <div class="row justify-content-center">
-      <div class="col-md-8">
-          <div class="card card-default">
-              <div class="card-header">Login Component</div>
+    <div class="container">
+        <b-card title="Login" sub-title="login">
+           
+           
 
-              <div class="card-body">
-                  I'm the Login Component component.
-              </div>
-          </div>
-      </div>
-  </div>
+        </b-card>
+    </div>
 </template>
 
 <script>
